@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kavan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Kavan.</span><br />
+          <!-- <div>I'm a Web Developer</div> -->
+          <span id="element"></span>
+          <div class="buttons">
+            <a
+              href="assets/ResumeCC.pdf"
+              download="Resume.pdf"
+              class="btn-link"
+            >
+              <button class="btn">Download Resume</button>
+            </a>
+            <a
+              href="https://github.com/Kavan01"
+              target="_blank"
+              class="btn-link"
+            >
+              <button class="btn">Visit Github</button>
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <!-- <section class="secondSection">
+        <h1>Skills</h1>
+        <br />
+        <div class="skills">
+          <li>Java</li>
+          <li>C</li>
+          <li>Python</li>
+          <li>Html</li>
+          <li>CSS</li>
+          <li>ASP .Net Core</li>
+          <li>SQL</li>
+        </div>
+      </section> -->
+      <section id="skills" class="secondSection">
+        <h1>Skills</h1>
+        <br />
+        <div class="skills">
+          <button class="skill-btn">Java</button>
+          <button class="skill-btn">C</button>
+          <button class="skill-btn">Python</button>
+          <button class="skill-btn">HTML</button>
+          <button class="skill-btn">CSS</button>
+          <button class="skill-btn">ASP .Net Core</button>
+          <button class="skill-btn">SQL</button>
+        </div>
+      </section>
+      <br />
+
+      <hr class="secondhr"/>
+      <section id="projects" class="secondSection">
+        <h1>Projects</h1>
+        <br />
+        <div>
+          <b>Real Time Iris Tracker (Vision)</b>
+          <li>
+            Developed Real time Iris tracker video player app that controls play,
+            pause, skip events according to your Iris movement and blinks
+            detection.
+          </li>
+          <li>
+            Used Python programming language and its libraries. Achieved 1st rank
+            in this team project.
+          </li>
+          <br />
+        </div>
+        <div>
+          <b>Healthify</b>
+          <li>
+            Healthify is like an e-commerce platform for Organic Vegetables &
+            Herbs.
+          </li>
+          <li>
+            Developed Admin and Client panel using ASP.NET Core WebApi, performed
+            efficient CRUD operations in the admin panel.
+          </li>
+        </div>
+      </section>
+
+      <hr />
+      <section id="contact" class="contactSection">
+        <h1>Contact Me</h1>
+        <br />
+        <form
+          action="https://formspree.io/f/example"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+      <hr />
+
+      <!-- Copyright Section -->
+      <footer>
+        <div class="copyright">
+          &copy; 2024 Kavan's Portfolio. All rights reserved.
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["I'm a <b>Web Developer</b>"],
+        typeSpeed: 40,
+      });
+    </script>
+  </body>
+</html>
